@@ -1,4 +1,4 @@
-# Your startup name here
+# Connect Four
 
 [My Notes](notes.md)
 
