@@ -31,13 +31,6 @@ Have you ever wanted to play connect 4 online but have not had any good options 
 
 There will be two main pages (unless later I decide I need an about page as well) a login page and a main page. The login page will have the basic information for login and a place to put in the username and password. The main page will have the actual game where you can play and will include instructions to the side along with a link to logout in the top corner. It will also have some form of information that will be accessed through a API but I have not decided on that yet a few ideas I could implement are images, quotes, or jokes. 
 
-```mermaid
-sequenceDiagram
-    actor You
-    actor Website
-    You->>Website: Replace this with your design
-```
-
 ### Key features
 
 - Login with secure HTTPS
