@@ -26,7 +26,7 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 ### Elevator pitch
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Have you ever wanted to play connect 4 online but have not had any good options for playing with friends online without interuptions? Well with this website all your problems are solved! This website has an easy free to play no ad game that can be played from anywhere. Don't know how to play? There is an entire page that explains the game for those who have not been introduced to the wonderful world of connect four.  
 
 ### Design
 
