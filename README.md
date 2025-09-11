@@ -40,9 +40,11 @@ sequenceDiagram
 
 ### Key features
 
-- Describe your key feature
-- Describe your key feature
-- Describe your key feature
+- Login with secure HTTPS
+- Highest scores are displayed
+- Random inspirational quote is displayed every time it is opened
+- Easy interface to play against friends 
+- Really fun and easy to learn 
 
 ### Technologies
 
