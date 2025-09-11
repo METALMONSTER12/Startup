@@ -29,7 +29,7 @@ Have you ever wanted to play connect 4 online but have not had any good options 
 </div>
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+There will be two main pages (unless later I decide I need an about page as well) a login page and a main page. The login page will have the basic information for login and a place to put in the username and password. The main page will have the actual game where you can play and will include instructions to the side along with a link to logout in the top corner. It will also have some form of information that will be accessed through a API but I have not decided on that yet a few ideas I could implement are images, quotes, or jokes. 
 
 ```mermaid
 sequenceDiagram
@@ -50,7 +50,7 @@ sequenceDiagram
 
 I am going to use the required technologies in the following ways.
 
-- **HTML** - Design for the login page, home page, and about page
+- **HTML** - Design for the login page, and home page
 - **CSS** - Styling for all three pages that is formatted well and pleasing to the eye
 - **React** - Allows for login capabilities, clean code, and automatic updates
 - **Service** - Backend services for loginning in and retreving scores 
