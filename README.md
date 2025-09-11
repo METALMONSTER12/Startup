@@ -23,8 +23,10 @@ Have you ever wanted to play connect 4 online but have not had any good options 
 
 ### Design
 
-<img src="Connect4-Login.jpg" alt="Design image" width="300"/>
-<img src="Connect4-Home.jpg" alt="Design image" width="300"/>
+<div style="display: flex;">
+  <img src="Connect4-Login.jpg" alt="Login page" width="300">
+  <img src="Connect4-Home.jpg" alt="Home page" width="300">
+</div>
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
