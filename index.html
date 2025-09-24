@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     
     <title>Connect Four HTML</title>
-    
+    <style>
+    .icon {
+        width: 18px;
+        display: inline-block;
+        text-align: center;
+    }
+    </style>
 </head>
 <body>
     <header>
@@ -23,12 +29,13 @@
         <h1>Welcome to Connect Four!</h1>
         <form method="get" action="game.html">
             <div>
-                <span>@</span>
+                <span class="icon"> @</span>
                 <input type="text" placeholder="your@email.com">
             </div>
             <div>
-                <span>🔒</span>
+                <span class="icon">🔒</span>
                 <input type="password" placeholder="Password">
+                <br></br>
             </div>
                 <button type="submit">Login</button>
                 <button type="button">Create</button>
