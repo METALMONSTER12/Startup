@@ -2,21 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Connect Four HTML</title>
-    //write a link thing here for icon I think
+    
 </head>
 <body>
     <header>
         <h1>Connect Four</h1>
         <nav>
-
+            <menu>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="about.html">About</a></li>
+            </menu>
         </nav>
     </header>
 
     <main>
         <h1>Welcome to Connect Four!</h1>
-        <p>This is a simple test to see if I can do this</p>
+        <form method="get" action="game.html">
+            <div>
+                <span>@</span>
+                <input type="text" placeholder="your@email.com">
+            </div>
+            <div>
+                <span>🔒</span>
+                <input type="password" placeholder="Password">
+            </div>
+            <button type="submit">Login</button>
+            <button type="button">Create</button>
     </main> 
 </body>
 
