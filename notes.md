@@ -1,6 +1,6 @@
 # CS 260 Notes
 
-[My startup - Simon](https://simon.cs260.click)
+[My startup - Startup](https://startup.nexusfour.click)
 
 ## Helpful links
 
@@ -10,8 +10,7 @@
 
 ## AWS
 
-My IP address is: 54.81.96.130
-Launching my AMI I initially put it on a private subnet. Even though it had a public IP address and the security group was right, I wasn't able to connect to it.
+My IP address is 54.225.198.108 went super smoothly no problems
 
 ## Caddy
 
@@ -19,9 +18,7 @@ No problems worked just like it said in the [instruction](https://github.com/web
 
 ## HTML
 
-This was easy. I was careful to use the correct structural elements such as header, footer, main, nav, and form. The links between the three views work great using the `a` element.
-
-The part I didn't like was the duplication of the header and footer code. This is messy, but it will get cleaned up when I get to React.
+This was pretty staightforward. The hardest part was getting my enviorment set up and running and then also deploying it with the deployFiles.sh. But overall that was doable after a bit of pain. All you have to do is navigate into the directory you want to push and run the correct command. I do not know why it took me so long but I figured it out eventually. Other than that everything went pretty well the Simon was super helpful and gave me an idea of what to do. In the actual coding the hardest part was trying to work out the graph and what elements I should do in HTML and what I should do in CSS. 
 
 ## CSS
 
