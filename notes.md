@@ -20,6 +20,8 @@ No problems worked just like it said in the [instruction](https://github.com/web
 
 This was pretty staightforward. The hardest part was getting my enviorment set up and running and then also deploying it with the deployFiles.sh. But overall that was doable after a bit of pain. All you have to do is navigate into the directory you want to push and run the correct command. I do not know why it took me so long but I figured it out eventually. Other than that everything went pretty well the Simon was super helpful and gave me an idea of what to do. In the actual coding the hardest part was trying to work out the graph and what elements I should do in HTML and what I should do in CSS. 
 
+I needed to have the image as a jpg for some reason for the icon took forever to figure out I am going to try that earlier next time. 
+
 ## CSS
 
 This took a couple hours to get it how I wanted. It was important to make it responsive and Bootstrap helped with that. It looks great on all kinds of screen sizes.
