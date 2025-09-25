@@ -11,6 +11,7 @@
 ## AWS
 
 My IP address is 54.225.198.108 went super smoothly no problems
+Command to run to deploy the new information - ./deployFiles.sh -k C:\Users\Elijah\OneDrive\Documents\CS260-Key\Shardblade.pem -h nexusfour.click -s startup
 
 ## Caddy
 
