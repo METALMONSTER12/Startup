@@ -60,15 +60,15 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [X] **HTML pages** - I did not complete this part of the deliverable.
-- [X] **Proper HTML element usage** - I did not complete this part of the deliverable.
-- [X] **Links** - I did not complete this part of the deliverable.
-- [X] **Text** - I did not complete this part of the deliverable.
-- [X] **3rd party API placeholder** - I did not complete this part of the deliverable.
-- [X] **Images** - I did not complete this part of the deliverable.
-- [X] **Login placeholder** - I did not complete this part of the deliverable.
-- [X] **DB data placeholder** - I did not complete this part of the deliverable.
-- [X] **WebSocket placeholder** - I did not complete this part of the deliverable.
+- [X] **HTML pages** - I have 3 pages, About, index, and Play. 
+- [X] **Proper HTML element usage** - I used HTML elements correctly throughout my code
+- [X] **Links** - I linked each page together and added a link to my github repo in my footer 
+- [X] **Text** - I added text throughout all the pages
+- [X] **3rd party API placeholder** - I will have a quote that periodically switches and is called from a 3rd party I also have a picture that will switch every time it is loaded.
+- [X] **Images** - I added a image that is a placeholder for now that will adjusted every time it is opened.
+- [X] **Login placeholder** - I have a place to put in a username and password that will be saved and stored in a database.
+- [X] **DB data placeholder** - I will store the login information from each person and will also store who won the round
+- [X] **WebSocket placeholder** - I will broadcast each turn to the other player and will also need a way to pair people up to play where they login at the same time and have to hit a button to search for a contest that will be live.  
 
 ## 🚀 CSS deliverable
 
