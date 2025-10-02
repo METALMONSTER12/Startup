@@ -1,0 +1,39 @@
+.picture-box {
+  height: calc(100px + 1em);
+  margin-bottom: 2em;
+  padding: 1.0em;
+  border-radius: 5px;
+}
+
+.quote-box {
+  margin-top: 2em;
+  padding: 1.0em;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.author {
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+.author::before {
+  content: " - ";
+}
+
+#picture img {
+  width: 150%;
+  height: 150%;
+}
+
+p {
+    text-align: center;
+}
