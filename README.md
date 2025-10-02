@@ -74,12 +74,12 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Header, footer, and main content body** - I did not complete this part of the deliverable.
-- [ ] **Navigation elements** - I did not complete this part of the deliverable.
-- [ ] **Responsive to window resizing** - I did not complete this part of the deliverable.
-- [ ] **Application elements** - I did not complete this part of the deliverable.
-- [ ] **Application text content** - I did not complete this part of the deliverable.
-- [ ] **Application images** - I did not complete this part of the deliverable.
+- [X] **Header, footer, and main content body** - This was the easiest part I designed it once and then just copied and pasted it 
+- [X] **Navigation elements** - I followed what the simon.css did so this was not to bad
+- [X] **Responsive to window resizing** - I again followed what simon did and I think I have it all working correctly
+- [X] **Application elements** - I was able to finish all this pretty easily the one part that was a little frusturating was the graph I ended up having to completely remove everything I did for my HTML and just use div elements and assign each one a specific format
+- [X] **Application text content** - This was really easy and did not take to much time
+- [X] **Application images** - This took forever I could not figure out how to get the background and the image to format with each other and they kept on going out of sync
 
 ## 🚀 React part 1: Routing deliverable
 

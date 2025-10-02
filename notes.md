@@ -29,6 +29,8 @@ I needed to have the image as a jpg for some reason for the icon took forever to
 
 I spent a little while on this part of the project it was super fun and informative. There were a few problems with getting things from bootstrap but I just had to remember the order of operations type thing but for CSS. I still need to figure out how to make it look better and center the images and quotes on the background better. 
 
+For the board it was just better to create two CSS selectors and set up everything under those two specifications. 
+
 ## React Part 1: Routing
 
 Setting up Vite and React was pretty simple. I had a bit of trouble because of conflicting CSS. This isn't as straight forward as you would find with Svelte or Vue, but I made it work in the end. If there was a ton of CSS it would be a real problem. It sure was nice to have the code structured in a more usable way.
