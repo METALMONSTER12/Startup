@@ -11,7 +11,7 @@
 ## AWS
 
 My IP address is 54.225.198.108 went super smoothly no problems
-Command to run to deploy the new information - ./deployFiles.sh -k C:\Users\Elijah\OneDrive\Documents\CS260-Key\Shardblade.pem -h nexusfour.click -s startup
+Command to run to deploy the new information - ./deployReact.sh -k C:\Users\Elijah\OneDrive\Documents\CS260-Key\Shardblade.pem -h nexusfour.click -s startup
 
 Command to ssh into my AWS server - ssh -i C:\Users\Elijah\OneDrive\Documents\CS260-Key\Shardblade.pem ubuntu@nexusfour.click
 
@@ -33,7 +33,7 @@ For the board it was just better to create two CSS selectors and set up everythi
 
 ## React Part 1: Routing
 
-Setting up Vite and React was pretty simple. I had a bit of trouble because of conflicting CSS. This isn't as straight forward as you would find with Svelte or Vue, but I made it work in the end. If there was a ton of CSS it would be a real problem. It sure was nice to have the code structured in a more usable way.
+This was pretty straightforward especially since I had already done it with simon. The hardest part was for some reason all my colors got switched so I had to go through the tree figuring out what did what until I changed the right thing. I also had a hard time working through were to put some files and I also had a hard time working through whether or not about.jsx needed to reference app.jsx which wasnt working. I ended up just editing the CSS slightly so that I did not have to. 
 
 ## React Part 2: Reactivity
 
