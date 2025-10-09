@@ -9,7 +9,7 @@ import { Play } from './play/play.jsx';
 export default function App() {
   return (
     <BrowserRouter>
-        <div className="body bg-dark text-light">
+        <div className="body bg-primary-subtle text-primary" data-bs-theme="dark">
             <header className="bg-body-secondary container-fluid">
                 <h1>Connect Four</h1>
                 <nav className="navbar-dark">
