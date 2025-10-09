@@ -1,29 +1,8 @@
-<!DOCTYPE html>
-<html data-bs-theme="dark" lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Connect Four CSS</title>
-    <link rel="icon" type="image/x-icon" href="Connectfouricon.jpg">
-    <link rel="stylesheet" href="play.css">
-    <link rel="stylesheet" href="main.css">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-</head>
-<body class="bg-primary-subtle text-primary" >
-    <header class="bg-body-secondary container-fluid">
-        <h1>Connect Four</h1>
-        <nav class="navbar-dark">
-            
-            <menu>
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="play.html">Play</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            </menu>
-        </nav>
-    </header>
+import React from 'react';
+import './play.css';
+
+export function Play() {
+  return (
     <main>  
         <h2>It is now (name)'s turn!</h2>
         <div class="board">
@@ -72,10 +51,5 @@
         </div>
         <p>To satisfy the websocket requirement I will have it be a live two person game with each turn getting broadcast to the other player.</p>
     </main>
-<footer class="bg-body-secondary">
-    <div class="container-fluid">
-        <span class="text-reset">Elijah Buckwalter</span>
-        <a class="text-reset" href="https://github.com/METALMONSTER12/startup">GitHub</a>
-    </div>   
-</footer>
-</html>
+  );
+}
