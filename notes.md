@@ -60,3 +60,9 @@ Handling the toggling of the checkboxes was particularly interesting.
   ))}
 </div>
 ```
+
+
+
+
+
+## Notes for the exam
