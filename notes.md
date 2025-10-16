@@ -66,7 +66,7 @@ Handling the toggling of the checkboxes was particularly interesting.
 
 
 ## Notes for the exam
-In the following code, what does the link element do?
+In the following code, what does the link element do? <br> 
 **Answer:** The Link (or NavLink) component from React Router creates a clickable navigation link that changes the URL and renders a different component WITHOUT reloading the entire page. It's like an `<a>` tag but for single-page applications - it keeps the app running smoothly and maintains state while just swapping out the content. NavLink is a special version that also adds an "active" class when you're on that page.
 
 **Example:**
