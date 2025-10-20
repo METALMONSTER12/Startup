@@ -444,9 +444,9 @@ ssh -i keyfile.pem ubuntu@nexusfour.click
 
 **Port 443, 80, 22 is reserved for which protocol?** <br>
 **Answer:**
-- Port **443**: HTTPS (secure web traffic)
-- Port **80**: HTTP (unsecured web traffic)
-- Port **22**: SSH (secure shell)
+- Port **443**: HTTPS (HTTP Secure) - Encrypted web traffic using SSL/TLS certificates. This is what you see when a website has a lock icon in the browser. All data sent between your browser and the server is encrypted, protecting passwords, credit cards, and personal information.
+- Port **80**: HTTP (Hypertext Transfer Protocol) - Unencrypted web traffic. This is the default port for regular websites without HTTPS. Data is sent in plain text, which means anyone intercepting the traffic can read it. Modern browsers often warn users when visiting HTTP sites.
+- Port **22**: SSH (Secure Shell) - Encrypted remote terminal access. Used to securely log into remote servers and execute commands. This is what you use when you SSH into your AWS server with commands like `ssh -i keyfile.pem ubuntu@nexusfour.click`.
 
 ---
 
