@@ -2,7 +2,7 @@ import React from 'react';
 import './about.css';
 
 export function About(props) {
-  const [imageURL, setImageURL] = React.useState('');
+  const [imageURL, setImageURL] = React.useState('/Placeholder.jpg');
   const [quote, setQuote] = React.useState('Loading...');
   const [quoteAuthor, setQuoteAuthor] = React.useState('unknown');
 
