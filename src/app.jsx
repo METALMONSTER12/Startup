@@ -5,8 +5,13 @@ import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { About } from './about/about.jsx';
 import { Login } from './login/login.jsx';
 import { Play } from './play/play.jsx';
+import { AuthState } from './login/authState.js';
 
-export default function App() {
+function App() {
+  const [userName, setUserName] = React.useState(localStorage.getItem('userName') || '');
+  const currentAuthState = userName ? AuthState.Authenticated : AuthState.Unauthenticated;
+  const [authState, setAuthState] = React.useState(currentAuthState);
+
   return (
     <BrowserRouter>
         <div className="body bg-primary-subtle text-primary" data-bs-theme="dark">
@@ -16,14 +21,27 @@ export default function App() {
                     
                     <menu>
                         <li className="nav-item"><NavLink className="nav-link" to="/">Home</NavLink></li>
-                        <li className="nav-item"><NavLink className="nav-link" to="/play">Play</NavLink></li>
-                        <li className="nav-item"><NavLink className="nav-link" to="/about">About</NavLink></li>
+                        {authState === AuthState.Authenticated && (<li className="nav-item"><NavLink className="nav-link" to="/play">Play</NavLink></li>)}
+                        {authState === AuthState.Authenticated && (<li className="nav-item"><NavLink className="nav-link" to="/about">About</NavLink></li>)}
                     </menu>
                 </nav>
             </header>
 
         <Routes>
-            <Route path="/" element={<Login />} />
+          <Route
+            path='/'
+            element={
+              <Login
+                userName={userName}
+                authState={authState}
+                onAuthChange={(userName, authState) => {
+                  setAuthState(authState);
+                  setUserName(userName);
+                }}
+              />
+            }
+            exact
+          />
             <Route path="/play" element={<Play />} />
             <Route path="/about" element={<About />} />
             <Route path="*" element={<NotFound />} />
@@ -44,3 +62,5 @@ export default function App() {
 function NotFound() {
   return <main className="container-fluid bg-secondary text-center">404: Return to sender. Address unknown.</main>;
 }
+
+export default App;
