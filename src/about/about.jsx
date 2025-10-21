@@ -1,7 +1,17 @@
 import React from 'react';
 import './about.css';
 
-export function About() {
+export function About(props) {
+  const [imageURL, setImageURL] = React.useState('');
+  const [quote, setQuote] = React.useState('Loading...');
+  const [quoteAuthor, setQuoteAuthor] = React.useState('unknown');
+
+  React.useEffect(() => {
+    setImageURL('/Placeholder.jpg');
+    setQuote('The only way to win is to play.');
+    setQuoteAuthor('Anonymous');
+  }, []);
+
   return (
     <main>
       <h2>About This Game</h2>
@@ -21,11 +31,11 @@ export function About() {
         <li>If the board fills up without any player connecting four, the game ends in a draw.</li>
       </ol>
       <div className="quote-box bg-body-secondary">
-        <div className="quote">The only way to win is to play.</div>
-        <div className="author">Anonymous</div>
+        <div className="quote">{quote}</div>
+        <div className="author">{quoteAuthor}</div>
       </div>
       <div className="picture-box bg-body-secondary">
-        <img src="/Placeholder.jpg" alt="Random" />
+        <img src={imageURL} alt="Random" />
       </div>
       <p>This is a placeholder image for my 3rd party API call along with the quote.</p>
     </main>
