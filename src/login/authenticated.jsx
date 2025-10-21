@@ -3,14 +3,14 @@ import { useNavigate } from 'react-router-dom';
 
 import Button from 'react-bootstrap/Button';
 
-import 'authenticated.css';
+import './authenticated.css';
 
 export function Authenticated(props) {
     const navigate = useNavigate();
 
     function logout() {
         localStorage.removeItem('userName');
-        props.onlogout();
+        props.onLogout();
     }
 
     return (

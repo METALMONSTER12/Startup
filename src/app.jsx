@@ -29,10 +29,10 @@ export default function App() {
             <Route path="*" element={<NotFound />} />
         </Routes>
 
-            <footer class="bg-body-secondary">
-                <div class="container-fluid">
-                    <span class="text-reset">Elijah Buckwalter</span>
-                    <a class="text-reset" href="https://github.com/METALMONSTER12/startup">GitHub</a>
+            <footer className="bg-body-secondary">
+                <div className="container-fluid">
+                    <span className="text-reset">Elijah Buckwalter</span>
+                    <a className="text-reset" href="https://github.com/METALMONSTER12/startup">GitHub</a>
                 </div>   
             </footer>
 
