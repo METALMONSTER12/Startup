@@ -15,5 +15,24 @@ export function Play() {
   const [currentPlayer, setCurrentPlayer] = React.useState(RED);
   const [winner, setWinner] = React.useState(null);
 
+  const dropPiece = (col) => {
+    if (winner) return;
+
+    for(let r = ROWS - 1; r >= 0; r--) { 
+      if (board[r][col] === EMPTY) {
+        row = r;
+        break;
+      }
+    }
+    if (row === undefined) return; // Column full
+
+    const newBoard = board.map(row => row.slice());
+    newBoard[row][col] = currentPlayer;
+    setBoard(newBoard);
+
+    setCurrentPlayer(currentPlayer === RED ? YELLOW : RED);
+  };
+
   
+
 }
