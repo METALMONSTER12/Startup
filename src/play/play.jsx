@@ -84,7 +84,7 @@ export function Play() {
 
   return ( 
     <main>
-      <h2>It is now {currentPlayer}'s turn</h2>
+      <h2>It is now {currentPlayer.charAt(0).toUpperCase() + currentPlayer.slice(1)}'s turn</h2>
       <Modal show={winner || isDraw} onHide={() => {}}>
         <Modal.Body className="bg-primary-subtle text-primary" data-bs-theme="dark" textAlign="center">
           {winner && <h3>{winner.charAt(0).toUpperCase() + winner.slice(1)} Wins!</h3>}
