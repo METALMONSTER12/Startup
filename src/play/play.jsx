@@ -33,6 +33,26 @@ export function Play() {
     setCurrentPlayer(currentPlayer === RED ? YELLOW : RED);
   };
 
-  
+  return ( 
+    <main>
+      <h2>It is now {currentPlayer}'s turn</h2>
+      {winner && <h3>{winner} wins!</h3>}
+
+      <div className="board">
+        {board.map((row, rowIndex) => (
+          row.map((cell, colIndex) => (
+            <div 
+              key={`${rowIndex}-${colIndex}`}
+              className={`cell ${cell ? cell : ''}`}
+              onClick={() => dropPiece(colIndex)}
+              style={{backgroundColor: cell === RED ? 'red' : cell === YELLOW ? 'yellow' : 'white'}}
+            ></div>
+          ))
+        ))}
+      </div>
+         
+
+    </main>
+  );
 
 }
