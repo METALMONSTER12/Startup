@@ -50,7 +50,11 @@ export function Play() {
           ))
         ))}
       </div>
-         
+         <button onClick={() => {
+          setBoard(Array(ROWS).fill(null).map(() => Array(COLS).fill(EMPTY)));
+          setCurrentPlayer(RED);
+          setWinner(null);
+        }}>Restart Game</button>
 
     </main>
   );
