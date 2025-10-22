@@ -2,54 +2,18 @@ import React from 'react';
 import './play.css';
 
 export function Play() {
-  return (
-    <main>  
-        <h2>It is now (name)'s turn!</h2>
-        <div className="board">
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-            <div className="cell"></div>
-        </div>
-        <p>To satisfy the websocket requirement I will have it be a live two person game with each turn getting broadcast to the other player.</p>
-    </main>
+  const ROWS = 6;
+  const COLUMNS = 7;
+  const RED = 'red';
+  const YELLOW = 'yellow';
+  const EMPTY = null;
+
+  const [board, setBoard] = React.useState(() => 
+    Array(ROWS).fill(null).map(() => Array(COLUMNS).fill(EMPTY))
   );
+  
+  const [currentPlayer, setCurrentPlayer] = React.useState(RED);
+  const [winner, setWinner] = React.useState(null);
+
+  
 }
