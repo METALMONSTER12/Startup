@@ -93,8 +93,8 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **All functionality implemented or mocked out** - I did not complete this part of the deliverable.
-- [ ] **Hooks** - I did not complete this part of the deliverable.
+- [X] **All functionality implemented or mocked out** - I am pratically there. The biggest thing I am still worried about is incorporating what I have to work with two people
+- [X] **Hooks** - I was able to finish this up pretty easily the logic was not to difficult I am just really bad at this. 
 
 ## 🚀 Service deliverable
 

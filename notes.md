@@ -37,28 +37,7 @@ This was pretty straightforward especially since I had already done it with simo
 
 ## React Part 2: Reactivity
 
-This was a lot of fun to see it all come together. I had to keep remembering to use React state instead of just manipulating the DOM directly.
-
-Handling the toggling of the checkboxes was particularly interesting.
-
-```jsx
-<div className="input-group sound-button-container">
-  {calmSoundTypes.map((sound, index) => (
-    <div key={index} className="form-check form-switch">
-      <input
-        className="form-check-input"
-        type="checkbox"
-        value={sound}
-        id={sound}
-        onChange={() => togglePlay(sound)}
-        checked={selectedSounds.includes(sound)}
-      ></input>
-      <label className="form-check-label" htmlFor={sound}>
-        {sound}
-      </label>
-    </div>
-  ))}
-</div>
+This was so cool to figure out. I had a lot of fun specifically working through making a pop up come up and editing that and making sure it came up at the right times. I definatley had a lot of troubleshooting to do though it was mostly fun troubleshooting. One of the worst parts was remembering to commit everything. I forgot so many times. 
 ```
 
 
@@ -464,7 +443,6 @@ async function example() {
   console.log(result);  // Output: "Done"
 }
 ```
-}
 ```
 ```
 
