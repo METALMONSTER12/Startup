@@ -7,10 +7,33 @@ export function About(props) {
   const [quoteAuthor, setQuoteAuthor] = React.useState('unknown');
 
   React.useEffect(() => {
-    setImageURL('/Placeholder.jpg');
-    setQuote('The only way to win is to play.');
-    setQuoteAuthor('Anonymous');
+    const random = Math.floor(Math.random() * 1000);
+    fetch(`https://picsum.photos/v2/list?page=${random}&limit=1`)
+      .then((response) => response.json())
+      .then((data) => {
+        const containerEl = document.querySelector('#picture');
+
+        const width = containerEl.offsetWidth;
+        const height = containerEl.offsetHeight;
+        const apiUrl = `https://picsum.photos/id/${data[0].id}/${width}/${height}?grayscale`;
+        setImageURL(apiUrl);
+      })
+      .catch();
+
+    fetch('https://quote.cs260.click')
+      .then((response) => response.json())
+      .then((data) => {
+        setQuote(data.quote);
+        setQuoteAuthor(data.author);
+      })
+      .catch();
   }, []);
+
+  let imgEl = '';
+
+  if (imageUrl) {
+    imgEl = <img src={imageUrl} alt='stock background' />;
+  }
 
   return (
     <main>
