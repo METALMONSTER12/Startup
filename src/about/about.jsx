@@ -31,8 +31,8 @@ export function About(props) {
 
   let imgEl = '';
 
-  if (imageUrl) {
-    imgEl = <img src={imageUrl} alt='stock background' />;
+  if (imageURL) {
+    imgEl = <img src={imageURL} alt='stock background' />;
   }
 
   return (
