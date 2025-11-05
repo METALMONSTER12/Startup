@@ -11,7 +11,7 @@
 ## AWS
 
 My IP address is 54.225.198.108 went super smoothly no problems
-Command to run to deploy the new information - ./deployReact.sh -k C:\Users\Elijah\OneDrive\Documents\CS260-Key\Shardblade.pem -h nexusfour.click -s startup
+Command to run to deploy the new information - ./deployService.sh -k C:\Users\Elijah\OneDrive\Documents\CS260-Key\Shardblade.pem -h nexusfour.click -s startup
 
 Command to ssh into my AWS server - ssh -i C:\Users\Elijah\OneDrive\Documents\CS260-Key\Shardblade.pem ubuntu@nexusfour.click
 
