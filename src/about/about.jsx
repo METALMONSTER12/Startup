@@ -6,7 +6,6 @@ export function About(props) {
   const [quote, setQuote] = React.useState('Loading...');
   const [quoteAuthor, setQuoteAuthor] = React.useState('unknown');
 
-  // We only want this to render the first time the component is created and so we provide an empty dependency list.
   React.useEffect(() => {
     const random = Math.floor(Math.random() * 1000);
     fetch(`https://picsum.photos/v2/list?page=${random}&limit=1`)
@@ -61,7 +60,6 @@ export function About(props) {
       <div id="picture" className="picture-box bg-body-secondary">
         {imgEl}
       </div>
-      <p>This is a placeholder image for my 3rd party API call along with the quote.</p>
     </main>
   );
 }

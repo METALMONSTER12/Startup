@@ -38,6 +38,10 @@ This was pretty straightforward especially since I had already done it with simo
 ## React Part 2: Reactivity
 
 This was so cool to figure out. I had a lot of fun specifically working through making a pop up come up and editing that and making sure it came up at the right times. I definatley had a lot of troubleshooting to do though it was mostly fun troubleshooting. One of the worst parts was remembering to commit everything. I forgot so many times. 
+
+## Mongo DB
+This was very frusturating it was not to difficult but it was a lot of problem solving. I initally had to figure out why it wasnt rendering my picture and it turns out I just had some syntax issues and then I had to figure out why it wasnt deploying and it turns out that you have to run both the front end and back end when testing the server. A fact I would have known if I hadnt been an idiot and payed attention in class.  
+
 ```
 
 
