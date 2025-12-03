@@ -2,6 +2,7 @@ import React from 'react';
 import './play.css';
 import { Modal, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { GameEvent, GameNotifier } from './gameNotifier';
 
 export function Play() {
   const ROWS = 6;
@@ -18,7 +19,7 @@ export function Play() {
   const [winner, setWinner] = React.useState(null);
   const [isDraw, setIsDraw] = React.useState(false);  
 
-  const dropPiece = (col) => {
+  const dropPiece = (col, isRemote = false) => {
     if (winner) return;
 
     let row;
@@ -34,6 +35,10 @@ export function Play() {
     newBoard[row][col] = currentPlayer;
     setBoard(newBoard);
 
+    if (!isRemote) {
+      GameNotifier.broadcastEvent('player', GameEvent.Move, { col });
+    }
+
     checkWinner(row, col, newBoard, currentPlayer);
 
     if (newBoard.every(row => row.every(cell => cell !== EMPTY))) {
@@ -43,6 +48,19 @@ export function Play() {
     // Switch player
     setCurrentPlayer(currentPlayer === RED ? YELLOW : RED);
   };
+
+  React.useEffect(() => {
+    const handleGameEvent = (event) => {
+      if (event.type === GameEvent.Move) {
+        dropPiece(event.value.col, true);
+      }
+    };
+
+    GameNotifier.addHandler(handleGameEvent);
+    return () => {
+      GameNotifier.removeHandler(handleGameEvent);
+    };
+  });
 
   const checkWinner = (row, col, checkBoard, player) => {
     
