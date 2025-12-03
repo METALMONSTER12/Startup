@@ -1,8 +1,9 @@
 const websocket = require('ws');
 
 function peerProxy(server) {
-  const wss = new websocketserver({ server: httpServer });
-    wss.on('connection', (ws) => {
+  const wss = new websocket.Server({ server: server });
+    
+  wss.on('connection', (ws) => {
         ws.isAlive = true;
 
         ws.on('message', function message(data) {
@@ -13,4 +14,19 @@ function peerProxy(server) {
             });
         });
 
-    }
+        ws.on('pong', () => {
+            ws.isAlive = true;
+        });
+    });
+
+    setInterval(() => {
+        wss.clients.forEach((function each(client) {
+            if (client.isAlive === false) return client.terminate();
+
+            client.isAlive = false;
+            client.ping();  
+        }));
+    }, 30000);
+}
+
+module.exports = peerProxy;
